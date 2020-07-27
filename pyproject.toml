@@ -30,6 +30,10 @@ black = "^19.10b0"
 flake8-black = "^0.2.1"
 mypy = "^0.782"
 flake8-annotations = "^2.3.0"
+flake8-docstrings = "^1.5.0"
+darglint = "^1.5.2"
+xdoctest = "^0.13.0"
+sphinx = "^3.1.2"
 
 [tool.poetry.scripts]
 hyper-modern = "hyper_modern.console:main"

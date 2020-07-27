@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "hyper-modern"
+version = "0.1.0"
+authors = ["bluemania <damnthatswack@hotmail.com>"]
+description = "The hypermodern Python project"
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/bluemania/hyper-modern"
+repository = "https://github.com/bluemania/hyper-modern"
+keywords = ["hypermodern"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+click = "^7.1.2"
+requests = "^2.24.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+hyper-modern = "hyper_modern.console:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+

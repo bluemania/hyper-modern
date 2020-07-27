@@ -1,11 +1,20 @@
 # src/hypermodern-python/wikipedia.py
+from dataclasses import dataclass
+
 import click
 import requests
 
-API_URL = "https://{language}.wikipedia.org/api/rest_v1/page/random/summary"
+
+@dataclass
+class Page:
+    title: str
+    extract: str
 
 
-def random_page(language="en"):
+API_URL: str = "https://{language}.wikipedia.org/api/rest_v1/page/random/summary"
+
+
+def random_page(language: str = "en") -> Page:
     url = API_URL.format(language=language)
 
     try:

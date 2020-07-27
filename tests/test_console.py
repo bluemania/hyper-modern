@@ -3,8 +3,8 @@ import click.testing
 import pytest
 import requests
 
-from hyper_modern import console
-from hyper_modern import example_module
+from hyper_modern import console, example_module
+
 
 @pytest.fixture
 def runner():
